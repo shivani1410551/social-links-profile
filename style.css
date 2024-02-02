@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+/* font-family: 'Inter', sans-serif;  400,600,700*/
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a,
+span,
+button,
+img {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(--off-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.container {
+  background-color: var(--dark-grey);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+.img-wrapper {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.info {
+  margin-top: 2rem;
+}
+.info h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.info h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--green);
+  padding-top: 10px;
+}
+.job {
+  margin-block: 1.5rem;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-links ul {
+  width: 100%;
+}
+
+.social-links ul li a {
+  color: var(--white);
+  padding-block: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--grey);
+  display: block;
+  border-radius: 0.6rem;
+}
+.social-links li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.social-links ul li a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .info {
+    margin-top: 1rem;
+  }
+  .info h1 {
+    font-size: 1rem;
+  }
+  .info h4 {
+    font-size: 0.6rem;
+  }
+  .job {
+    margin-block: 0.8rem;
+    white-space: nowrap;
+    padding-inline: 20px;
+  }
+  .social-links ul li a {
+    padding-block: 0.8rem;
+  }
+}
